@@ -4,7 +4,6 @@ var BreakDancer = function(top, left, timeBetweenSteps){
   this.$nodeClass = $('.breakDancer');
   this.angle = 0;
   this.setPosition(top, left);
-
 };
 BreakDancer.prototype = Object.create(Dancer.prototype);
 BreakDancer.prototype.constructor = BreakDancer;

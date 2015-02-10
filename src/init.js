@@ -1,6 +1,7 @@
 $(document).ready(function(){
   window.dancers = [];
 
+
   $(".lineUp").on("click", function(event){
     for(var i = 0; i < window.dancers.length; i++){
       window.dancers[i].lineUp();
@@ -24,6 +25,7 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
 
     window.dancers.push(dancer);
     console.log(window.dancers);
