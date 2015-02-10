@@ -2,8 +2,6 @@ var BreakDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, 10);
   this.$node = $('<span class="breakDancer animated infinite shake"></span>');
   this.$nodeClass = $('.breakDancer');
-  this.left = left;
-  this.top = top;
   this.angle = 0;
   this.setPosition(top, left);
 

@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addBlinkyDancer, .addPoleDancer, .addBreakDancer{
+.title, .addBlinkyDancer, .addPoleDancer, .addBreakDancer, .lineUp, .interact{
   padding:5px 12px;
   float:right;
 }
@@ -20,15 +20,12 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer, .blinkyDancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
-}
 
 .breakDancer{
-  background: url(http://i895.photobucket.com/albums/ac152/xirro/spongebobjellyfish.png);
+  background: url(./img/spongebobjellyfish.png);
   position: absolute;
+  height: 150px;
+  width: 117px;
 }
 
 .poleDancer{
@@ -36,4 +33,16 @@ body, a:link, a:visited, a:active{
   width:100px;
   height:150px;
   position:absolute;
+}
+
+.blinkyDancer{
+  background: url(./img/spongebobninja.png);
+  width: 120px;
+  height: 109px;
+  position: absolute;
+}
+
+body {
+  background: url(./img/bikinibottom.jpg);
+  background-size: 100%;
 }
