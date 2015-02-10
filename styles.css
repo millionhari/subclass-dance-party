@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addBlinkyDancer, .addPoleDancer{
+.title, .addBlinkyDancer, .addPoleDancer, .addBreakDancer{
   padding:5px 12px;
   float:right;
 }
@@ -26,8 +26,14 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.breakDancer{
+  background: url(http://i895.photobucket.com/albums/ac152/xirro/spongebobjellyfish.png);
+  position: absolute;
+}
+
 .poleDancer{
-  border:10px solid blue;
-  border-radius:10px;
+  background: url(./img/patrickpole3.png);
+  width:100px;
+  height:150px;
   position:absolute;
 }
