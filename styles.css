@@ -29,6 +29,8 @@ body, a:link, a:visited, a:active{
 .breakDancer{
   background: url(http://i895.photobucket.com/albums/ac152/xirro/spongebobjellyfish.png);
   position: absolute;
+  width: 600px;
+  height: 600px;
 }
 
 .poleDancer{
