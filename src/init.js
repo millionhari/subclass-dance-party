@@ -7,13 +7,25 @@ $(document).ready(function(){
       window.dancers[i].lineUp();
     }
   });
+  $(".partyTime").on("click", function(event){
+    for(var i = 0; i < window.dancers.length; i++){
+      window.dancers[i].step();
+    }
+  });
 
   $(".interact").on("click", function(event){
-    for (var i = 0 ; i < window.dancers.length; i++){
-      var $windowDancers = $(window.dancers[i]);
-      console.log($windowDancers);
+    for(var i = 0; i < window.dancers.length; i++){
+      for(var j = i+1; j < window.dancers.length; j++){
+        if(Math.abs(window.dancers[i].collision() - window.dancers[j].collision()) < 50){
+          console.log(Math.abs(window.dancers[i].collision() - window.dancers[j].collision()));
+          window.dancers[i].stop();
+          window.dancers[j].stop();
+        }
+
+      }
     }
-  })
+
+  });
 
   var $dancerList = $(".addPoleDancer, .addBreakDancer, .addBlinkyDancer");
 
@@ -28,8 +40,6 @@ $(document).ready(function(){
 
 
     window.dancers.push(dancer);
-    console.log(window.dancers);
-    console.log(dancer.left);
     $('body').append(dancer.$node);
   });
 

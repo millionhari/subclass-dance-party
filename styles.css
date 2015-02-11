@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addBlinkyDancer, .addPoleDancer, .addBreakDancer, .lineUp, .interact{
+.title, a{
   padding:5px 12px;
   float:right;
 }

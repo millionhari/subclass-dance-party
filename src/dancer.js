@@ -25,12 +25,11 @@ Dancer.prototype.lineUp = function(){
   clearTimeout(this.timeout);
   this.setPosition(150);
 };
+Dancer.prototype.stop = function (){
+  clearTimeout(this.timeout);
+}
 
-Dancer.prototype.collision = function(c1,c2){
-  var dx = c1.x - c2.x;
-  var dy = c1.y - c2.y;
-  var dist = c1.radius + c2.radius;
-
-  return (dx * dx + dy * dy <= dist * dist);
+Dancer.prototype.collision = function(){
+  return Math.sqrt(Math.pow((this.top/2), 2) + Math.pow((this.left/2), 2));
 };
 
